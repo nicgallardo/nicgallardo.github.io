@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nic Gallardo</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Righteous|Eczar:400,800" rel="stylesheet" type="text/css"/>
+    </head>
+    <body ng-app>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+    <div class="row">
+    <div class="col-md-12 height-quarter bg-white text-center">
+      <div class="col-md-2 col-md-offset-1"><img src="assets/images/ng_web_logo_large.png" width="85%" class="nav-bar-img "/></div>
+      <div class="col-md-2 height-quarter">
+        <div class="nav-vert-center">
+          <h2 ng-model="about" ng-mouseover="about = true; work = false; contact = false">about</h2>
+        </div>
+      </div>
+      <div class="col-md-2 height-quarter">
+        <div class="nav-vert-center">
+          <h2 ng-model="work" ng-mouseover="work = true; about = false; contact = false">work</h2>
+        </div>
+      </div>
+      <div class="col-md-2 height-quarter">
+        <div class="nav-vert-center">
+          <h2 ng-model="contact" ng-mouseover="contact = true; about = false; work = false">contact</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-black">
+    <div ng-show="about" class="col-md-offset-3 col-md-6 height-half about-div">
+      <h1 class="font-white">about
+        <p>
+          <h3 class="font-white">Sixth generation Coloradoan back home after a decade of exploring the Carolinas. Formally being a Graphic Designer and now a Full Stack Developer I bring a unique set of skills to teams.</h3>
+        </p>
+        <p>
+          <h3 class="font-white">Building with both code and physical meterials is a passion of mine. When I am not busy coding you can usually find me in my workshop brewing beer, building a printing press or silk screen machine from scratch or just tinkering around. Engaging in the process of creating and building is a true passion of mine. </h3>
+        </p>
+      </h1>
+      <div class="col-md-1 col-md-offset-11">
+        <h4 ng-mouseover="about = false" class="font-white"><span class="glyphicon glyphicon-remove"></span></h4>
+      </div>
+    </div>
+    <div ng-show="work" class="col-md-offset-3 col-md-6 height-half work-div">
+      <h1 class="font-white">work
+        <p>
+          <h3 class="font-white text-center"><a href="http://galaxybomber.xyz">galaxybomber.xyz</a></h3>
+          <h4 class="font-white">An interactive game with a creative use of socket.io that allows users to engage in real time play against each other. Tech and Methods: MongoDB, Express.js, Angular.js, Node.js, Socket.io and Passport.</h4>
+          <div class="col-md-6"><img src="assets/images/galaxy.png"/></div>
+          <div class="col-md-6"><img src="assets/images/galaxy2.png"/></div>
+        </p>
+      </h1>
+      <div class="col-md-1 col-md-offset-11">
+        <h4 ng-mouseover="work = false" class="font-white"><span class="glyphicon glyphicon-remove"></span></h4>
+      </div>
+    </div>
+    <div ng-show="contact" class="col-md-offset-3 col-md-6 height-half">
+      <h1 class="font-white">contact</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="text-right"><span class="font-white glyphicon glyphicon-phone-alt"></span></h2>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-left font-white">303-913-0999</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="text-right"><span class="font-white glyphicon glyphicon-envelope"></span></h2>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-left font-white"><a href="mailto:nic.gallardo@gmail.com?Subject=Hello" target="_top">nic.gallardo@gmail.com</a>
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-right"><img src="assets/images/twitter.png" width="30%"/></div>
+        <div class="col-md-6">
+          <h2 class="text-left vertical-center"><a href="https://twitter.com/fullstacknic" class="font-white">@fullstacknic</a></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-right"><img src="assets/images/github_logo.png" width="20%"/></div>
+        <div class="col-md-6">
+          <h2 class="text-left vertical-center"><a href="https://github.com/nicgallardo" class="font-white">/nicgallardo</a></h2>
+        </div>
+        <div class="col-md-1 col-md-offset-11">
+          <h4 ng-mouseover="contact = false" class="font-white"><span class="glyphicon glyphicon-remove"></span></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  </body>
+</html>
